@@ -29,8 +29,10 @@ void dotProd(void *args){
 
   int vMinSize = v1Size < v2Size ? v1Size : v2Size;
 
+  // Recursive
   // obliv int sum = dotRec(v1, v2, 0, vMinSize);
   
+  // Iterative
   obliv int sum = 0;
   for(int i=0; i<vMinSize; i++){
     sum += v1[i]*v2[i];
